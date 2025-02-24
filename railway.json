@@ -1,0 +1,25 @@
+{
+    "services": {
+      "backend": {
+        "root": "backend",
+        "build": {
+          "builder": "NIXPACKS",
+          "buildCommand": "npm install"
+        },
+        "deploy": {
+          "startCommand": "node server.js"
+        }
+      },
+      "frontend": {
+        "root": "frontend",
+        "build": {
+          "builder": "NIXPACKS",
+          "buildCommand": "npm install && npm run build"
+        },
+        "deploy": {
+          "startCommand": "npx serve -s build -l $PORT"
+        }
+      }
+    }
+  }
+  

@@ -2,7 +2,8 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 
-const SIGNALING_SERVER_URL = 'ws://localhost:5000';
+const SIGNALING_SERVER_URL = 'wss://freeshare-production.up.railway.app';
+
 
 function App() {
   const [peerId, setPeerId] = useState('');
