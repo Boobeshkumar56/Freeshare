@@ -1,6 +1,6 @@
 import { io } from "socket.io-client";
 
-const socket = io("wss://4772-106-51-44-202.ngrok-free.app");
+const socket = io("wss://freeshare-f2ak.onrender.com");
 
 let peerConnection;
 let dataChannel;
